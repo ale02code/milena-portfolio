@@ -1,10 +1,11 @@
 .footer {
+  min-height: 100vh;
   padding: var(--padding-new-window);
   background-color: var(--color-secondary);
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -15,6 +16,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: .5rem;
 }
 
 .footer__text__title {
@@ -25,10 +27,11 @@
 
 .footer__text__desc {
   color: #ddd;
+  font-size: var(--font-size-text);
 }
 
 .footer__text__social {
-  margin-top: 1rem;
+  margin-top: .8rem;
   width: 100%;
   display: flex;
   justify-content: center;

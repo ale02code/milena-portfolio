@@ -1,0 +1,12 @@
+.socialButton {
+  height: 60px;
+  border: none;
+  border-radius: var(--border-radius);
+  padding: .5rem;
+  background-color: var(--color-primary);
+  overflow: hidden;
+}
+
+.socialButton>img {
+  height: 100%;
+}

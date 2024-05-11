@@ -1,9 +1,17 @@
-import "./App.css";
+import Header from "./components/Header";
+import Home from "./components/Home";
+import AboutMe from "./components/AboutMe";
+import Projects from "./components/Projects";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
-      <h1>Hello World</h1>
+      <Header />
+      <Home />
+      <AboutMe />
+      <Projects />
+      <Footer />
     </>
   );
 }

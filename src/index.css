@@ -1,6 +1,19 @@
 :root {
-  --font-ubuntu-title: "Ubuntu", sans-serif;
+  --font-title: "Ubuntu", sans-serif;
   --font-inter-text: "Inter", sans-serif;
+
+  --color-primary: #ffffff;
+  --color-secondary: #1D1D1D;
+  --color-tertiary: #315eaa;
+  --color-tertiary-dark: #1e2b42;
+  --color-text-add: #6a6a6a;
+
+  --border-radius: 10px;
+
+  --font-size-title: 2.5rem;
+  --font-size-text: 1rem;
+
+  --padding-new-window: 50px 0px;
 }
 
 * {
@@ -8,4 +21,9 @@
   margin: 0;
   box-sizing: border-box;
   font-family: var(--font-inter-text);
+  font-size: 1rem;
+}
+
+body {
+  background-color: var(--color-primary);
 }

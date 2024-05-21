@@ -4,15 +4,15 @@ import "../styles/Home.css";
 
 function home() {
   return (
-    <section className="home">
+    <section className="home" id="home">
       <section className="home__texts">
         <div>
-          <b className="home__texts__b">Bienvenido, soy</b>
+          <b className="home__texts__b">Ahola, soy</b>
           <h1 className="home__texts__h1">milena Chacon</h1>
           <p className="home__texts__p">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
-            nulla, incidunt nemo consequatur ab labore accusantium deserunt
-            aperiam? Libero lestiae tenetur.
+            Tengo 23 años, y es un placer mostrarles un poco de mi esencia. Como
+            ilustradora gráfica, en este portafolio veremos mi desempeño y
+            habilidades que me definen como diseñadora gráfica.
           </p>
         </div>
 

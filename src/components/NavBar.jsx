@@ -25,13 +25,13 @@ function NavBar() {
       {menuOpen && (
         <ul className="header__nav__ul">
           <li className="header__nav__ul__li">
-            <a href="">inicio</a>
+            <a href="#home">inicio</a>
           </li>
           <li className="header__nav__ul__li">
-            <a href="">sobre mi</a>
+            <a href="#about">sobre mi</a>
           </li>
           <li className="header__nav__ul__li">
-            <a href="">proyectos</a>
+            <a href="#projects">proyectos</a>
           </li>
         </ul>
       )}

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import NavBar from "../components/NavBar";
-import TextManao from "../assets/icons/text-manao.svg";
+import Logo from "../assets/icons/main-logo.png";
 import "../styles/Header.css";
 
 function Header() {
@@ -23,7 +23,7 @@ function Header() {
     <header className={`header ${visible ? "visible" : "hidden"}`}>
       <figure className="header__figureImg">
         <img
-          src={TextManao}
+          src={Logo}
           alt="TestImage"
           title="This is a test"
           className="header__figureImg__img"

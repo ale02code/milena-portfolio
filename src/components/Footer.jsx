@@ -6,6 +6,7 @@ import BookBlack from "../assets/icons/book-black.png";
 import InstagramIcon from "../assets/icons/instagram.png";
 import WhatsAppIcon from "../assets/icons/whatsapp.png";
 import "../styles/Footer.css";
+import Credits from "./Credits";
 
 function Footer() {
   return (
@@ -13,11 +14,16 @@ function Footer() {
       <section className="footer__text">
         <h3 className="footer__text__title">¡Contactame!</h3>
         <p className="footer__text__desc">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, saepe deleniti sapiente minima corporis doloremque recusandae ipsa facilis enim exercitationem?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
+          saepe deleniti sapiente minima corporis doloremque recusandae ipsa
+          facilis enim exercitationem?
         </p>
         <div className="footer__text__social">
           <SocialButton link={"https://youtube.com"} img={PdfBlackIcon} />
-          <SocialButton link={"https://youtube.com"} img={BookBlack} />
+          <SocialButton
+            link={"https://heyzine.com/flip-book/780568255e.html"}
+            img={BookBlack}
+          />
           <SocialButton link={"https://youtube.com"} img={PinterestBlackIcon} />
         </div>
       </section>
@@ -33,6 +39,7 @@ function Footer() {
           link="https://api.whatsapp.com/send?phone=50375707425"
         />
       </section>
+      <Credits />
     </footer>
   );
 }

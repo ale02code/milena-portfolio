@@ -1,0 +1,18 @@
+.credits {
+  display: none;
+  /* display: block */
+  padding: 2px;
+  position: absolute;
+  bottom: 0;
+  background-color: #313131;
+  color: var(--color-primary);
+  text-align: center;
+}
+
+.credits__paragraph__author::before {
+  content: " ";
+}
+
+.credits__paragraph__author {
+  color: #ccc;
+}

@@ -1,13 +1,29 @@
+import { useState, useEffect } from "react";
 import NavBar from "../components/NavBar";
-import TestImage from "../assets/icons/test.png";
+import TextManao from "../assets/icons/text-manao.svg";
 import "../styles/Header.css";
 
 function Header() {
+  const [visible, setVisible] = useState(true);
+  const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);
+
+  const handleScroll = () => {
+    const currentScroll = window.scrollY;
+    const isVisible = prevScrollPos > currentScroll;
+    setVisible(isVisible);
+    setPrevScrollPos(currentScroll);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [prevScrollPos, visible]);
+
   return (
-    <header className="header">
+    <header className={`header ${visible ? "visible" : "hidden"}`}>
       <figure className="header__figureImg">
         <img
-          src={TestImage}
+          src={TextManao}
           alt="TestImage"
           title="This is a test"
           className="header__figureImg__img"

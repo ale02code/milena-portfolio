@@ -1,5 +1,5 @@
 import BlobBackground from "../assets/icons/blobBackground.svg";
-import UserTestIMG from "../assets/icons/user.png";
+import FaceImg from "../assets/imgs/face.jpeg";
 import "../styles/Home.css";
 
 function home() {
@@ -28,8 +28,9 @@ function home() {
             className="home__blobContainer__figure__blob"
           />
           <img
-            src={UserTestIMG}
-            alt=""
+            src={FaceImg}
+            alt="Milena Chacón"
+            title="Milena Chacón"
             className="home__blobContainer__figure__photo"
           />
         </figure>
